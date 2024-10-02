@@ -61,7 +61,7 @@ function isSafe(board,row,col,val,n) {
 	let sj= col-col%rn;
 	for(let x=si; x<si+rn; x++){
 		for(let y=sj; y<sj+rn; y++){
-			if(board==val){
+			if(board[x][y]==val){
 				return false;
 			}
 		}
